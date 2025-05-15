@@ -1,0 +1,57 @@
+[
+    {
+        "bookimg":"images/test1.jpg",
+        "booktitle":"Braiding Sweetgrass",
+        "bookauth":"Robin Wall Kimmerer",
+        "bookdescr":"Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants is a 2013 nonfiction book by Potawatomi professor Robin Wall Kimmerer, about the role of Indigenous knowledge..."
+    },
+
+    {
+        "bookimg":"images/test2.webp",
+        "booktitle":"Lo-TEK",
+        "bookauth":"Julia Watson",
+        "bookdescr":"Enter Lo—TEK, a design movement building on indigenous philosophy and vernacular infrastructure to generate sustainable, resilient, nature-based technology. Spanning 18 countries from Peru and the Philippines to Tanzania and Iran, this book explores millennia-old human ingenuity on how to live in symbiosis with nature...."
+    },
+
+    {
+        "bookimg":"images/test3.png",
+        "booktitle":"Furniture Link",
+        "bookauth":"Stephen Harrison",
+        "bookdescr":"For more than 17 years VCR promoted innovative value-created contemporary furniture manufacturing in Canada and beyond. furniturelink continues the crusade. If the maxim we are what we eat applies to us as individuals, then furniturelink takes the view that we are what we make defines us as a society. .. "
+    },
+
+    {
+        "bookimg":"images/test4.png",
+        "booktitle":"@Issue (vol 2. no 1.)",
+        "bookauth":"Pentagon Design",
+        "bookdescr":"@Issue is a journal about the effective use of design in business. While design manifests itself in nearly every aspect of business—from architecture, signage, retail interiors, the physical appearance and ergonomic handling of a product to all ..."
+    },
+
+    {
+        "bookimg":"images/test5.png",
+        "booktitle":"Bugs that Eat your House",
+        "bookauth":"The Old House",
+        "bookdescr":"This Old House magazine celebrates two great American traditions: fine craftsmanship and cutting-edge technology. We try to educate, inform, and entertain our readers with new ideas as well as revisit old techniques, processes, and tools..."
+    },
+
+    {
+        "bookimg":"images/test6.png",
+        "booktitle":"Meaningful Stuff",
+        "bookauth":"Jonathan Chapman",
+        "bookdescr":"Never have we wanted, owned, and wasted so much stuff. Our consumptive path through modern life leaves a wake of social and ecological destruction--sneakers worn only once, bicycles barely even ridden, and forgotten smartphones ..."
+    },
+
+    {
+        "bookimg":"images/test7.png",
+        "booktitle":"Screws Poster",
+        "bookauth":"This Old House",
+        "bookdescr":"This poster is meant to familiarize (or refamiliarize) the reader with the screw from top to bottom. It serves as an educational device, a visual aid in recognizing specific attributes of the screw. The information is presented in a structured, organized manner for quick identity and reference..."
+    },
+
+    {
+        "bookimg":"images/test8.png",
+        "booktitle":"Interactivity by Design",
+        "bookauth":"MetaDesign",
+        "bookdescr":"interactivity by Design is a book for everyone who manages or designs interactive products.In plain language, it reveals the process of interactive design as a system of decisions and tasks leading to products that work. The design objective was to show communicators a clear path through the complex, interrelated design and management issues that arise in creating an interactive product..."
+    }
+]

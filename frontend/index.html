@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>solar catelog home</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="headline">
+            <div class="words">
+                <img class="sunpic" src="images/sun.png" alt="sun">
+            <h2>The Ricker Library @ UIUC</h2>
+            <h1>S&nbsp;&nbsp;&nbsp;lar Catalogue</h1>
+            
+            <h3>The Solar Catalogue is a online catalogue dedicated to showcasing sustainable books and other relevant media. This website is hosted and powered by a solar powered server located on [the roof of the art building]. Click banner for more info</h3>
+            </div>
+            <div class="server_info">
+                <img src="images/srvpic.png" alt="srv"  style="width:100%">
+                <div class="battprog">
+                    <p> battery level : 100% </p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="catelog">
+                <div class="searchbar">
+                    <p style="align-self:flex-start;">search by keyword</p>
+                    <div class="helpsearch"></div>
+                    <p>or category</p>
+                    <p>ecology</p>
+                    <!-- figure this out  -->
+                </div>
+                    <div id="books"></div>
+                    <script>
+                        fetch('catalog.json') 
+                            .then(res => res.json())
+                            .then(data => {
+                    data.forEach(element => {
+                    const bookImg = element.bookimg;
+                    const bookTitle = element.booktitle;
+                    const bookAuth = element.bookauth;
+                    const bookDescr = element.bookdescr;
+
+                    const eachBook = document.createElement('div');
+                    eachBook.classList.add('book-card');
+
+                    const imgEl = document.createElement('img');
+                    imgEl.src = bookImg;
+
+                    const titleElement = document.createElement('h3');
+                    titleElement.textContent = bookTitle;
+
+                    const authorElement = document.createElement('h4');
+                    authorElement.textContent = `Author: ${bookAuth}`;
+
+                    const line = document.createElement('div');
+                    line.classList.add('line');
+
+                    const descriptionElement = document.createElement('p');
+                    descriptionElement.textContent = `Description: ${bookDescr}`;
+
+                    eachBook.appendChild(imgEl);
+                    eachBook.appendChild(titleElement);
+                    eachBook.appendChild(authorElement);
+                    eachBook.appendChild(line);
+                    eachBook.appendChild(descriptionElement);
+
+
+                    eachBook.addEventListener('click', () => {
+                    const detailsDiv = document.getElementById('book-details'); // inside #highlights
+
+                    detailsDiv.innerHTML = `
+                    <div class="book-card">
+                    <h2>${bookTitle}</h2>
+                    <img src="${bookImg}" alt="${bookTitle}" style="max-width: 100px;">
+                    <p><strong>Author:</strong> ${bookAuth}</p>
+                    <p><strong>Description:</strong> ${bookDescr}</p>
+                    </div>
+  `;
+});
+
+                    document.getElementById('books').appendChild(eachBook);
+                    });
+                    })
+                .catch(error => console.error("Error getting data:", error));
+                    </script>
+            </div>  
+            <div id="highlights">
+                <div class="searchbar">
+                    <p>highlights </p>
+                </div>
+                <div id="book-details" >
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
